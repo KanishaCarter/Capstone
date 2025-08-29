@@ -6,12 +6,12 @@ CREATE TABLE users (
     username VARCHAR(25) UNIQUE NOT NULL,
     user_password TEXT NOT NULL,
     user_email VARCHAR(100) UNIQUE NOT NULL,
+    user_first_name VARCHAR(255),
+    user_last_name VARCHAR(255),
     user_address TEXT,
     user_phone_number VARCHAR(20)
 );
-
--- Scents Table
-DROP TABLE IF EXISTS scents CASCADE;
+ 
 CREATE TABLE scents (
     scent_id SERIAL PRIMARY KEY,
     scent_name VARCHAR(255) NOT NULL,

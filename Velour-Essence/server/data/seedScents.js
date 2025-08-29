@@ -1,4 +1,4 @@
-import client from '../data/client.js'
+import client from './client.js'
 
 async function seedScents() {
     try {
