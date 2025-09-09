@@ -1,11 +1,11 @@
 \c velour_essence;
 -- Users Table
 DROP TABLE IF EXISTS users CASCADE;
-CREATE TABLE users (
+DROP TABLE IF EXISTS account CASCADE;
+CREATE TABLE account (
     user_id SERIAL PRIMARY KEY,
     username VARCHAR(25) UNIQUE NOT NULL,
     user_password TEXT NOT NULL,
-    user_email VARCHAR(100) UNIQUE NOT NULL,
     user_first_name VARCHAR(255),
     user_last_name VARCHAR(255),
     user_address TEXT,

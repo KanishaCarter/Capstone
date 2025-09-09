@@ -4,7 +4,7 @@ async function seedUsers() {
     try {
         await client.connect()
         const SQL = `
-        INSERT INTO users(
+        INSERT INTO account(
         username,
         user_password,
         user_email,
