@@ -62,12 +62,12 @@ async function seedScents() {
         ('Sweet Aroma',	'Vanilla Musk',2.0,	42.50,	'Vanilla, musk soft'),
         ('Noir Essence', 'Oud Mystique',2.0,	59.50,	'Oud, deep woody');
         `
-        const result = await client.query(SQL);
-        console.log('Database seeded.');
+        const result = await client.query(SQL)
+        console.log('Database seeded.')
     } catch(err) {
-        console.log(err);
+        console.log(err)
     } finally {
-        await client.end();
+        await client.end()
     }
 }
 
